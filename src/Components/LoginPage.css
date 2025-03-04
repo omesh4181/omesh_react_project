@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  .login-container {
+    width: 100%;
+    max-width: 1000px;
+    height: 580px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+  .login-wrapper {
+    display: flex;
+    height: 100%;
+  }
+  .login-left {
+    flex: 1;
+    background: linear-gradient(135deg, #4a90e2, #185abc);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+  }
+  .login-left-content {
+    text-align: center;
+  }
+  .login-left-content h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+  .login-left-content p {
+    font-size: 16px;
+    opacity: 0.9;
+    margin-bottom: 30px;
+  }
+  
+  .travel-illustration {
+    position: relative;
+    margin: 40px 0;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .travel-icon {
+    font-size: 40px;
+    z-index: 2;
+  }
+  .travel-path {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.3);
+    z-index: 1;
+  }
+  .login-right {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .login-form-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .login-header {
+    margin-bottom: 30px;
+  }
+  
+  .login-header h2 {
+    font-size: 28px;
+    margin-top: 5%;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .login-header p {
+    color: #666;
+    font-size: 14px;
+  }
+  
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 8px;
+  }
+  
+  .input-group {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .input-icon {
+    position: absolute;
+    left: 12px;
+    color: #999;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 12px 12px 12px 40px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: border 0.3s ease;
+  }
+  
+  .input-group input:focus {
+    border-color: #4a90e2;
+    outline: none;
+  }
+  
+  .password-toggle {
+    position: absolute;
+    right: 12px;
+    cursor: pointer;
+    color: #999;
+  }
+  
+ 
+  .form-extras {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 13px;
+  }
+  
+  .remember-me {
+    display: flex;
+    align-items: center;
+  }
+  
+  .remember-me input {
+    margin-right: 8px;
+  }
+  
+  .forgot-password {
+    color: #4a90e2;
+    text-decoration: none;
+  }
+  
+  .forgot-password:hover {
+    text-decoration: underline;
+  }
+  
+  
+  .login-btn {
+    width: 100%;
+    padding: 12px;
+    background: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .login-btn:hover {
+    background: #185abc;
+  }
+  
+ 
+  .separator {
+    position: relative;
+    text-align: center;
+    margin: 25px 0;
+  }
+  
+  .separator::before,
+  .separator::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 40%;
+    height: 1px;
+    background: #ddd;
+  }
+  
+  .separator::before {
+    left: 0;
+  }
+  
+  .separator::after {
+    right: 0;
+  }
+  
+  .separator span {
+    display: inline-block;
+    padding: 0 10px;
+    background: white;
+    position: relative;
+    color: #888;
+    font-size: 13px;
+  }
+  
+
+  .social-login {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .social-btn {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: transparent;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .social-btn:hover {
+    background: #f5f5f5;
+  }
+  
+  .social-btn.google {
+    color: #ea4335;
+  }
+  
+  .social-btn.facebook {
+    color: #1877f2;
+  }
+  
+ 
+  .signup-link {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .signup-link a {
+    color: #4a90e2;
+    text-decoration: none;
+  }
+  .signup-link a:hover {
+    text-decoration: underline;
+  }
+  @media (max-width: 768px) {
+    .login-wrapper {
+      flex-direction: column;
+    }
+    .login-container {
+      height: auto;
+    }
+    .login-left {
+      padding: 30px;
+    }
+    .travel-illustration {
+      margin: 20px 0;
+    }
+  }
