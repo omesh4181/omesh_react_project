@@ -10,5 +10,7 @@ import img11 from './front-left.avif';
 import img12 from './Honda-CR-V-2021.avif';
 import img13 from './5-series-vs-E-class.jpg';
 import img14 from './car1.jpeg';
+import vid1 from './videoplayback.mp4';
+import vid2 from './video2.mp4';
 
-export { img4,img5,img6,img8,img9,img10,img11,img12,img13,img14 };
+export { img4,img5,img6,img8,img9,img10,img11,img12,img13,img14,vid1,vid2 };
