@@ -1,7 +1,8 @@
 import React from 'react';
 import './DestinationCard.css';
 import { Card, CardGroup, Button } from 'react-bootstrap';
-import {img8,img9,img10} from '../assets';
+import {img8,img9,img10} from '../../assets';
+// import {Link} from 'react-router-dom'
 
 
 function DestinationCards() {
@@ -29,7 +30,7 @@ function DestinationCards() {
         </Card.Body>
         <Card.Footer>
           <Button className="text-muted">Free</Button>
-          <Button className="text-muted">Premium $</Button>
+          <Button className="text-muted1">Premium $</Button>
         </Card.Footer>
       </Card>
       <Card>
@@ -37,12 +38,17 @@ function DestinationCards() {
         <Card.Body>
           <Card.Title>Card title</Card.Title>
           <Card.Text>
-            This card has supporting text below as a natural lead-in to additional content.
+             A ship is a large vessel that travels the world's oceans and other navigable waterways,
+             carrying cargo or passengers, or in support of specialized missions, such as defense,
+             research and fishing. Ships are generally distinguished from boats, based on size, 
+             shape, load capacity and purpose. Ships have supported exploration, trade, warfare,
+             migration, colonization, and science. Ship transport is responsible for the largest 
+             portion of world commerce
           </Card.Text>
         </Card.Body>
         <Card.Footer>
           <Button className="text-muted">Free</Button>
-          <Button className="text-muted">Premium $</Button>
+          <Button className="text-muted1">Premium $</Button>
         </Card.Footer>
       </Card>
       <Card>
@@ -58,7 +64,7 @@ function DestinationCards() {
         </Card.Body>
         <Card.Footer>
           <Button className="text-muted">Free</Button>
-          <Button className="text-muted">Premium $</Button>
+          <Button className="text-muted1">Premium $</Button>
         </Card.Footer>
       </Card>
     </CardGroup>

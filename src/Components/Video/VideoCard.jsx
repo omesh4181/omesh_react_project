@@ -2,14 +2,14 @@ import React from 'react';
 import { Card } from 'react-bootstrap';
 // import { img11 } from '../assets';
 // import { vid } from '../assets';
-import videotravel from '../assets/videotravel.mp4';
+import videotravel from '../../assets/videotravel.mp4';
 
 function VideoCard() {
   return (
     <Card className="mb-3">
 
 
-      <video width="900" controls autoPlay loop muted>
+      <video width="100%" controls autoPlay loop muted>
         <source src={videotravel} type="video/mp4" />
         Your browser does not support the video tag.
       </video>

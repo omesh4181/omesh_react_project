@@ -1,7 +1,17 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Sign.css';
+import { useNavigate } from 'react-router-dom';
+ 
+// const users = []; // Temporary storage for user data
 
+// const saveUserData = (userData) => {
+//     users.push(userData);
+// };
+
+// const validateLogin = (email, password) => {
+//     return users.some(user => user.email === email && user.password === password);
+// };
 
 
 
@@ -61,7 +71,7 @@ const Signup = () => {
                         required
                     />
                 </div>
-                <div>
+                {/* <div>
                     <label>Conform Password</label>
                     <input
                      type="Conform Password"
@@ -70,7 +80,7 @@ const Signup = () => {
                      onChange={handleChange}
                      required 
                      />
-                </div>
+                </div> */}
                 <Link to='/Signup'>
                   <button type="submit">Signup</button>
                 </Link>

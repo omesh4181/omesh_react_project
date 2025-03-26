@@ -7,13 +7,13 @@ function ContactSection() {
       <h3 className="mb-5">Contact us</h3>
       <Row>
         <Col lg={5}>
-        <iframe
-  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d243646.90547034072!2d78.24288677128587!3d17.41260836167205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb99daeaebd2c7%3A0xae93b78392bafbc2!2sHyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1740657197791!5m2!1sen!2sin"
-  width={400}
-  height={400}
-  style={{ border: 0 }}
-  loading="lazy"
-/>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d243646.90547034072!2d78.24288677128587!3d17.41260836167205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb99daeaebd2c7%3A0xae93b78392bafbc2!2sHyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1740657197791!5m2!1sen!2sin"
+            width={400}
+            height={400}
+            style={{ border: 0 }}
+            loading="lazy"
+          />
 
         </Col>
         <Col lg={7}>

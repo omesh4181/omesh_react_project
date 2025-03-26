@@ -6,6 +6,9 @@ import img6 from './metro.jpg';
 import img8 from './images1.jpeg';
 import img9 from './images2.jpeg';
 import img10 from './images3.jpg';
-// import img11 from './car.webp'
+import img11 from './front-left.avif';
+import img12 from './Honda-CR-V-2021.avif';
+import img13 from './5-series-vs-E-class.jpg';
+import img14 from './car1.jpeg';
 
-export { img4,img5,img6,img8,img9,img10};
+export { img4,img5,img6,img8,img9,img10,img11,img12,img13,img14 };

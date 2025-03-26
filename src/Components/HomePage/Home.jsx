@@ -12,15 +12,17 @@ function Home() {
                     </div>
                     <ul className="nav-links1">
                         <li><Link to="#home">Home</Link></li>
-                        <li><Link to="#about">About</Link></li>
                         <li><Link to="#services">Services</Link></li>
                         <li><Link to="#portfolio">Portfolio</Link></li>
                         <li><Link to="#contact">Contact</Link></li>
+                        <li><Link to="#about">About</Link></li>
                     </ul>
                 </nav>
             </header>
 
             <main>
+            {/* <button type="button" class="btn btn-outline-light">Light</button>
+            <button type="button" class="btn btn-outline-dark">Dark</button> */}
                 <section id="home" className="hero">
                     <div className="hero-content">
                         <h1>Welcome to </h1>
@@ -34,8 +36,8 @@ function Home() {
                         <h2>About Us</h2>
                         <div className="about-content">
                             <div className="about-text">
-                                {/* <p>We are a team of passionate developers dedicated to creating beautiful and functional web applications using React.</p> */}
-                                <p>Our mission is to deliver high-quality solutions that meet our clients' needs and exceed their expectations.</p>
+                                <p>Tours and travels represent more than just moving from one place to another; they are transformative experiences that broaden horizons, create lasting memories, and provide opportunities for personal growth and cultural understanding</p>
+                                <p>Whether you're a solo adventurer, a family seeking new experiences, or a group of friends exploring the world, tours and travels offer something unique for everyone..</p>
                             </div>
                             <div className="about-image">
                                 {/* Placeholder for an image */}
@@ -51,7 +53,7 @@ function Home() {
                         <div className="services-grid">
                             <div className="service-card">
                                 <h3>Web Development</h3>
-                                <p>Custom web applications built with React</p>
+                                <p>Custom web applications built with </p>
                             </div>
                             <div className="service-card">
                                 <h3>UI/UX Design</h3>
@@ -74,7 +76,7 @@ function Home() {
                 <div className="container">
                     <div className="footer-content">
                         <div className="footer-logo">
-                            <h2>ReactApp</h2>
+                            <h2>Tour's</h2>
                             <p>Building the web of tomorrow</p>
                         </div>
                         <div className="footer-links">

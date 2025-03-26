@@ -151,6 +151,9 @@
   .remember-me input {
     margin-right: 8px;
   }
+  /* .remember-me label {
+    width: 100px;
+  } */
   
   .forgot-password {
     color: #4a90e2;

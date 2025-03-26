@@ -1,24 +1,23 @@
+
 import React, { useState } from 'react';
 import { BsEnvelopeFill, BsLockFill, BsEyeSlashFill, BsEyeFill, BsGoogle, BsFacebook, BsAirplaneFill, BsMap } from 'react-icons/bs';
 import './LoginPage.css';
-import {Link} from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom';
 
 const LoginPage = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [rememberMe, setRememberMe] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
+  const navigate = useNavigate();
 
-const navigateToDashboard = () => {
-
-    window.location.href = '/dashboard';
-};
-
-const handleSubmit = (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     console.log({ email, password, rememberMe });
-    navigateToDashboard();
-};
+    // Navigate to home page after form submission
+    navigate('/home');
+  };
+
   const togglePasswordVisibility = () => {
     setShowPassword(!showPassword);
   };
@@ -93,8 +92,7 @@ const handleSubmit = (e) => {
                 <a href="#" className="forgot-password">Forgot Password?</a>
               </div>
               
-                <Link to='/home'><button type="submit" className="login-btn">Login</button></Link>
-            
+              <button type="submit" className="login-btn">Login</button>
               
               <div className="separator">
                 <span>or continue with</span>
@@ -110,6 +108,7 @@ const handleSubmit = (e) => {
                   <span>Facebook</span>
                 </button>
               </div>
+              
               <Link to='/Signup'>
                 <p className="signup-link">
                     Don't have an account? <a href="/signup">Sign up</a>
@@ -122,6 +121,6 @@ const handleSubmit = (e) => {
     </div>
   );
 };
-export default LoginPage;
 
+export default LoginPage;
 
