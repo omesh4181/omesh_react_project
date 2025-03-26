@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import './Payment.css';
+import './payment.css';
 
 const PaymentProcess = () => {
   const [step, setStep] = useState(1);
