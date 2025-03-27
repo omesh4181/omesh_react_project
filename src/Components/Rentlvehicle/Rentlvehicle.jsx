@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { img14 } from '../../assets';
+import { useNavigate } from 'react-router-dom';
 // import 'Rentlvehicle.css'
+
 
 const RentalVehicleProcess = () => {
   // State management
@@ -19,6 +21,11 @@ const RentalVehicleProcess = () => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
   const [confirmation, setConfirmation] = useState(null);
+  const navigate = useNavigate();
+
+  const payment = () => {
+    navigate('/payment'); // Navigates to the Payment page
+  };
 
   // Mock data - in a real app this would come from an API
   useEffect(() => {
@@ -369,6 +376,13 @@ const RentalVehicleProcess = () => {
           style={{backgroundColor:"red"}}
         >
           Book Another Vehicle
+        </button>
+        <button 
+          onClick={payment} 
+          className="px-4 py-2 bg-gray-200 rounded hover:bg-gray-300 mr-2"
+          style={{backgroundColor:"green"}}
+        >
+          Payment 
         </button>
       </div>
     </div>

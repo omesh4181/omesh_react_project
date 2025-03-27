@@ -80,6 +80,7 @@ const HotelBookingApp = () => {
               setSelectedHotel(null);
               setBookingConfirmed(false);
             }}
+            style={{backgroundColor:"green"}}
           >
             Book Another Hotel
           </button>

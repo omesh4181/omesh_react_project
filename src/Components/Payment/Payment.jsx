@@ -1,6 +1,7 @@
 
 import React, { useState } from 'react';
 import './payment.css';
+import { useNavigate } from 'react-router-dom';
 
 const PaymentProcess = () => {
   const [step, setStep] = useState(1);
@@ -19,6 +20,11 @@ const PaymentProcess = () => {
   const [errors, setErrors] = useState({});
   const [isProcessing, setIsProcessing] = useState(false);
   const [isComplete, setIsComplete] = useState(false);
+  const navigate = useNavigate();
+  
+  const payment = () => {
+      navigate('/Rentlvehicle'); // Navigates to the Payment page
+    };
 
   // Handle input changes
   const handleChange = (e) => {
@@ -336,7 +342,7 @@ const PaymentProcess = () => {
       <h2>Payment Successful!</h2>
       <p>Thank you for your purchase. A receipt has been sent to {paymentData.email}.</p>
       <p>Transaction ID: {Math.random().toString(36).substr(2, 9).toUpperCase()}</p>
-      <button className="btn btn-primary" onClick={() => window.location.reload()}>
+      <button className="btn btn-primary" onClick={Rentlvehicle}>
         Return to Store
       </button>
     </div>

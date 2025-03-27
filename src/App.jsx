@@ -30,6 +30,8 @@ function App() {
         <Route path='Rentelvechile' element={<RentalVehicleProcess/>}></Route>
         <Route path='Addplace' element={< Places />}></Route>
         <Route path='Hotel' element={<HotelBookingApp/>}></Route>
+        <Route path="/payment" element={< PaymentProcess/>} />
+        <Route path="/payment" element={<RentalVehicleProcess />} />
       </Routes>
 
     </div>
