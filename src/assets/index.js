@@ -13,4 +13,8 @@ import img14 from './car1.jpeg';
 import vid1 from './videoplayback.mp4';
 import vid2 from './video2.mp4';
 
+
 export { img4,img5,img6,img8,img9,img10,img11,img12,img14,vid1,vid2 };
+
+// export { img4,img5,img6,img8,img9,img10,img11,img12,img14,vid1,vid2 };
+

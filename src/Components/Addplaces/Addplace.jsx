@@ -1,29 +1,29 @@
 
 import React, { useState } from 'react';
 import { BsPlusCircle, BsTrash, BsGeoAlt, BsPerson } from 'react-icons/bs';
-// import './AddPlace.css';
+import './AddPlace.css';
 
 const Places = () => {
   const [places, setPlaces] = useState([
     {
       id: 1,
-      name: 'Santorini',
-      location: 'Greece',
-      image: 'https://source.unsplash.com/random/300x200/?santorini',
+      name: 'Manali',
+      location: 'India',
+      image: 'https://s7ap1.scene7.com/is/image/incredibleindia/The-Best-Adventure-Experiences-in-Manali1-popular?qlt=82&ts=1726730921047',
       userName: 'TravelLover22'
     },
     {
       id: 2,
-      name: 'Kyoto',
-      location: 'Japan',
-      image: 'https://source.unsplash.com/random/300x200/?kyoto',
+      name: 'Vizag',
+      location: 'AndhraPradesh',
+      image: 'https://img.traveltriangle.com/blog/wp-content/uploads/2019/12/cover-for-Things-To-Do-In-Andhra-Pradesh-_18th-Dec.jpg',
       userName: 'AsiaExplorer'
     },
     {
       id: 3,
-      name: 'Machu Picchu',
-      location: 'Peru',
-      image: 'https://source.unsplash.com/random/300x200/?machupicchu',
+      name: 'Paradise on Earth',
+      location: 'Kashmir',
+      image: 'https://www.ghumindiaghum.com/blog/wp-content/uploads/2023/03/Neeulm_Valley_AJK.jpg',
       userName: 'AdventureSeeker'
     }
   ]);

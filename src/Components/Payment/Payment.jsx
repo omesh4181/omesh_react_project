@@ -1,7 +1,9 @@
 
 import React, { useState } from 'react';
 import './payment.css';
+
 import { useNavigate } from 'react-router-dom';
+
 
 const PaymentProcess = () => {
   const [step, setStep] = useState(1);

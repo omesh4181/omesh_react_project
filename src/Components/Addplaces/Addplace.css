@@ -1,10 +1,211 @@
+/* Container for the entire Places component */
+.places-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
 
+/* Header with title and add-place button */
+.places-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.places-header h2 {
+  font-size: 2rem;
+  color: #333;
+  margin: 0;
+}
+
+.add-place-btn {
+  display: flex;
+  align-items: center;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-place-btn:hover {
+  background-color: #45a049;
+}
+
+.add-place-btn svg {
+  margin-right: 8px;
+}
+
+/* Form container styling */
+.add-place-form-container {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+/* Form layout */
+.add-place-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+.form-group input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Submit button styling */
+.submit-place-btn {
+  background-color: #2196f3;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-place-btn:hover {
+  background-color: #1976d2;
+}
+
+/* Grid layout for the place cards using flexbox */
+.places-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Card styling for each place */
+.place-card {
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
+  width: 300px; /* Fixed width for card layout */
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.place-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Image container inside the card */
+.place-image-container {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.place-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Place information styling */
+.place-info {
+  padding: 15px;
+  flex-grow: 1;
+}
+
+.place-info h3 {
+  margin: 0 0 10px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.place-location,
+.place-user {
+  display: flex;
+  align-items: center;
+  color: #777;
+  margin: 5px 0;
+}
+
+.place-location svg,
+.place-user svg {
+  margin-right: 8px;
+}
+
+/* Delete button styling */
+.delete-place-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  color: #e53935;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.delete-place-btn:hover {
+  transform: scale(1.2);
+}
+
+/* Responsive styles */
+
+/* Small devices (max-width: 600px) */
+@media (max-width: 600px) {
+  .places-container {
+    padding: 10px;
+  }
+  
+  .places-header h2 {
+    font-size: 1.5rem;
+  }
+  
+  .place-card {
+    width: 100%;
+  }
+  
+  .place-image-container {
+    height: 150px;
+  }
+}
+
+
+
+
+/* 
 .places-container {
     padding: 2rem;
     max-width: 1200px;
     margin: 0 auto;
   }
-  
+  /* .container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  } 
   .places-header {
     display: flex;
     justify-content: space-between;
@@ -171,7 +372,7 @@
     color: white;
   }
   
-  /* Animation for new places */
+  /* Animation for new places 
   @keyframes fadeIn {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
@@ -179,4 +380,4 @@
   
   .place-card {
     animation: fadeIn 0.5s ease-out;
-  }
+  } */

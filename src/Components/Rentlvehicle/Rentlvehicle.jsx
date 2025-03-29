@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { img14 } from '../../assets';
 import { useNavigate } from 'react-router-dom';
-// import 'Rentlvehicle.css'
+import './Rentlvehicle.css'
 
 
 const RentalVehicleProcess = () => {
